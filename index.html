@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dozietony Cyber</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Add the latest version of EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+<!-- CYBER STAR LOADER -->
+<div id="loader">
+  <div class="cyber-star"></div>
+</div>
+
+
+  <div class="magic-particles"></div>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="overlay">
+
+
+
+      <!-- Top logo centered at top -->
+<div class="top-logo-wrapper">
+  <img 
+    src="https://github.com/dozietonycyber-web/DTC/blob/main/DTC.png?raw=true" 
+    alt="Dozietony Cyber Logo" 
+    class="top-logo"
+  >
+</div>
+  <h1 class="cyber-title">DOZIETONY CYBER</h1>
+<div class="line-loop"></div>
+<h2 class="cyber-sub">   Smart & Fast Services</h2>
+<div class="line-loop"></div>
+    </div>
+  </header>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+  <div class="service-grid">
+  <div class="card" data-service="media">Photography, Videography & Livestreaming</div>
+  <div class="card" data-service="passport">Passport Application</div>
+  <div class="card" data-service="computer">Computer Packages Training</div>
+  <div class="card" data-service="wealth">Wealth Declaration</div>
+  <div class="card" data-service="birth">Death Certificate Application</div>
+  <div class="card" data-service="ecitizen">E-Citizen Account Creation</div>
+  <div class="card" data-service="dl">Driving Licence Renewal</div>
+  <div class="card" data-service="kra">KRA PIN Registration</div>
+  <div class="card" data-service="nssf">NSSF Registration</div>
+  <div class="card" data-service="nhif">SHA Registration</div>
+  <div class="card" data-service="helb">HELB Application</div>
+  <div class="card" data-service="docedit">Document Editing & Typing</div>
+  <div class="card" data-service="certdesign">Certificate Designing & Editing</div>
+  <div class="card" data-service="printing">Printing, Photocopy & Scanning</div>
+  <div class="card" data-service="photo">Passport Photos & Lamination</div>
+</div>
+
+ <!-- Descriptions (hidden by default) -->
+
+<div class="service-description" id="media">
+  <p>Professional media services including photography, videography, and livestreaming for events, corporate functions, social media content, church services, weddings, and more. We use quality equipment to produce clear visuals, clean audio, and polished final outputs tailored to your needs.</p>
+</div>
+
+<div class="service-description" id="passport">
+  <p>Assistance with new passport applications and renewals through the official government system, ensuring accurate document submission and smooth processing.</p>
+</div>
+
+<div class="service-description" id="computer">
+  <p>We offer professional Computer Packages Training covering essential skills such as Microsoft Word, Excel, PowerPoint, Internet usage, email, and basic computer operations. Our training is suitable for beginners, students, job seekers, and professionals who want to improve their digital skills.</p>
+</div>
+
+<div class="service-description" id="wealth">
+  <p>We provide reliable assistance with Wealth Declaration services, helping individuals accurately fill and submit their declaration forms as required by relevant authorities. We ensure confidentiality, accuracy, and compliance with official requirements.</p>
+</div>
+
+<div class="service-description" id="birth">
+  <p>We help with applying for Death certificates, including online requests, corrections, and verification support via official platforms.</p>
+</div>
+
+<div class="service-description" id="ecitizen">
+  <p>Creation and setup of verified eCitizen accounts, enabling access to government services such as certificates, licences, and digital applications.</p>
+</div>
+
+<div class="service-description" id="dl">
+  <p>We offer full support for driving licence renewal, NTSA services, Smart DL processing, and account updates to ensure timely approvals.</p>
+</div>
+
+<div class="service-description" id="kra">
+  <p>Services include KRA PIN registration, account recovery, updates, and guidance on iTax-related tasks for individuals and businesses.</p>
+</div>
+
+<div class="service-description" id="nssf">
+  <p>NSSF account registration, contributions setup, member updates, and assistance with employer/employee portal services.</p>
+</div>
+
+<div class="service-description" id="nhif">
+  <p>SHA registration, details updating and assistance with digital contribution services for individuals and families.</p>
+</div>
+
+<div class="service-description" id="helb">
+  <p>We support HELB loan applications, renewals, account setup, and troubleshooting for students and graduates seeking financial aid.</p>
+</div>
+
+<div class="service-description" id="docedit">
+  <p>Professional document editing, typing, formatting, and layout support for academic, business, and official documents.</p>
+</div>
+
+<div class="service-description" id="certdesign">
+  <p>Professional designing and editing of certificates including academic, award, appreciation, business, and official documents, tailored to your preferred style and formatting.</p>
+</div>
+
+<div class="service-description" id="printing">
+  <p>Affordable and high-quality printing, photocopying, and scanning services for documents, forms, academic work, and official files.</p>
+</div>
+
+<div class="service-description" id="photo">
+  <p>Passport-size photography, digital editing, printing, and professional lamination for IDs, certificates, and official documents.</p>
+</div>
+
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section id="booking">
+    <h2>Book a Service</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+  <option value="" disabled selected>--Choose a Service--</option>
+  <option>Photography, Videography & Livestreaming</option>
+  <option>Passport Application</option>
+  <option>Computer Packages Training</option>
+  <option>Wealth Declaration</option>
+  <option>Death Certificate Application</option>
+  <option>E-Citizen Account Creation</option>
+  <option>Driving Licence Renewal</option>
+  <option>KRA PIN Registration</option>
+  <option>NSSF Registration</option>
+  <option>SHA Registration</option>
+  <option>HELB Application</option>
+  <option>Document Editing & Typing</option>
+  <option>Certificate Designing & Editing</option>
+  <option>Printing, Photocopy & Scanning</option>
+  <option>Passport Photos & Lamination</option>
+</select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="contact">Phone Number (Include Country Code):</label>
+      <input type="tel" id="contact" name="contact" placeholder="e.g., +254XXXXXXX" value="+254" required>
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+    <p id="confirmation" style="display:none; color:green; margin-top:10px;">
+      ✅ Thank you! Your booking has been submitted. We will contact you soon.
+    </p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about"> 
+    <h2>About Us</h2>
+    <p>We provide reliable and convenient digital and document services, making official processes easier for everyone. From government applications to printing and document management, we ensure fast, accurate, and professional assistance for all your administrative needs.</p>
+    <h3>Mission</h3>
+    <p>Our mission is to simplify access to essential services, including e-government applications, document editing, and professional printing. We aim to offer efficient, affordable, and trustworthy support so that individuals and businesses can complete their tasks with ease and confidence.</p>
+    <h3>Vision</h3>
+    <p>To be the most trusted and accessible cyber and document service center, known for exceptional service, digital expertise, and helping clients navigate official processes seamlessly.</p>
+</section>
+
+
+  <!-- FOUNDER SECTION -->
+  <section id="founder">
+    <div class="founder-overlay">
+      <h2>Founder</h2>
+      <img src="https://github.com/dozietonycyber-web/DTC/blob/main/founder.jpg?raw=true" alt="" class="founder-pic">
+      <h3>Tech Washington</h3>
+      <div class="line-loop"></div>
+      <p>Founder of DTC, dedicated to making digital and document services simple and accessible, with a focus on professionalism and customer satisfaction.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><span>Email:</span> dozietonycyber@gmail.com</p>
+  <p><span>Contact:</span> +254731669210</p>
+  <p><span>Location:</span> Vihiga, Kenya — Opposite Chamakanga Primary</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 DTC. All rights reserved.</p>
+</footer>
+
+  <!-- WHATSAPP CHAT BUTTON (NEW FEATURE) -->
+  <a href="https://wa.me/254731669210" 
+     target="_blank" 
+     style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 18px; border-radius:30px; font-weight:bold; text-decoration:none; box-shadow:0 4px 6px rgba(0,0,0,0.2);">
+     💬 Chat with Us
+  </a>
+
+  <div class="mode-switch">
+  <input type="checkbox" id="modeToggle">
+  <label for="modeToggle" class="switch"></label>
+</div>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollToTop" 
+          style="position:fixed; bottom:20px; left:20px; padding:10px 20px; background:#25D366; color:white; border:none; border-radius:50%; font-size:20px; cursor:pointer;">
+    ↑
+  </button>
+
+ <!-- JavaScript -->
+<script>
+  // Initialize EmailJS with user ID
+  emailjs.init("Ax-CZgcg0E15EVL6f");  // This is your actual Public API Key
+
+  // Scroll to Top functionality
+  document.getElementById("scrollToTop").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Toggle service descriptions
+  const cards = document.querySelectorAll('.card');
+  const descriptions = document.querySelectorAll('.service-description');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const target = card.getAttribute('data-service');
+      descriptions.forEach(desc => {
+        if(desc.id === target){
+          desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+        } else {
+          desc.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Booking form confirmation and WhatsApp message
+  document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Get form data
+    const name = document.getElementById('name').value;
+    const service = document.getElementById('service').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const contact = document.getElementById('contact').value;
+
+    // Validate form data to ensure no field is missing
+    if (!name || !service || !date || !time || !contact) {
+      alert("Please fill out all fields.");
+      return;  // Stop form submission if any field is missing
+    }
+
+    // Show confirmation message
+    document.getElementById("confirmation").style.display = "block";
+
+    // Prepare the WhatsApp message
+    const whatsappMessage = `New Booking:\nName: ${name}\nService: ${service}\nDate: ${date}\nTime: ${time}\nContact: ${contact}`;
+
+    // Open WhatsApp with the message
+    const whatsappUrl = `https://wa.me/254731669210?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, "_blank");
+
+    // Prepare email data
+    const emailData = {
+      name: name,
+      service: service,
+      date: date,
+      time: time,
+      contact: contact
+    };
+
+    // Send email using EmailJS
+    emailjs.send("service_sybvodu", "template_6p4y4gp", emailData)
+      .then(function(response) {
+        console.log("Success:", response);
+      }, function(error) {
+        console.log("Error:", error);
+        alert("Sorry, there was an error sending your booking. Please try again.");
+      });
+
+    // Optionally, reset the form after submission
+    this.reset();
+  });
+
+  // Dark/Light Mode toggle
+  const toggleBtn = document.getElementById("modeToggle");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.contains("dark-mode")){
+      toggleBtn.textContent = "☀️ Light Mode";
+      toggleBtn.style.background = "#f1c40f";
+      toggleBtn.style.color = "#000";
+    } else {
+      toggleBtn.textContent = "🌙 Dark Mode";
+      toggleBtn.style.background = "#333";
+      toggleBtn.style.color = "#fff";
+    }
+  });
+
+  // Dynamic Title Blinking effect (alternating title text)
+setInterval(function() {
+  document.title = document.title === "DOZIETONY 🔧 DTC 🔧"
+    ? "Cyber Services"
+    : "DOZIETONY 🔧 DTC 🔧";
+}, 1000);  // Toggle the title every 1 second
+
+// Fade-in elements
+const fadeElements = document.querySelectorAll(".fade-in");
+
+
+function reveal() {
+  fadeElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      el.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);
+reveal();
+
+// Hide loader when page loads
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  loader.style.opacity = "0";
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 400); // fast fade out
+});
+
+
+</script>
+
+</body>
+</html>
+
